@@ -1,5 +1,6 @@
 # encoding: UTF-8
 
+require 'polar/version'
 require 'polar/signature_calculator'
 require 'polar/authentication'
 require 'polar/request'
@@ -13,9 +14,8 @@ require 'polar/error/api_error'
 
 module Polar
   BASE_URL = "http://api.renren.com/restserver.do"
-  VERSION = [0, 0, 7]
 
   def self.version
-    VERSION * "."
+    Polar::Version
   end
 end
